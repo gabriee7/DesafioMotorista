@@ -4,10 +4,10 @@ import MotoristaController from "../controller/MotoristaController.js";
 const router = express.Router()
 
 router
-    .get("/motorista", MotoristaController.listarTodos)
-    .get("/motorista/:id", MotoristaController.listarPorId)
-    .post("/motorista", MotoristaController.cadastrar)
-    .put("/motorista/:id", MotoristaController.atualizar)
-    .delete("/motorista/:id", MotoristaController.excluir)
+    .get("/motoristas", MotoristaController.listarTodos)
+    .get("/motoristas/:id", MotoristaController.listarPorId)
+    .post("/motoristas", MotoristaController.cadastrar)
+    .put("/motoristas/:id", MotoristaController.atualizar)
+    .delete("/motoristas/:id", MotoristaController.excluir)
 
 export default router
