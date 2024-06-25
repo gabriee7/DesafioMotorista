@@ -44,7 +44,7 @@ class MotoristaController {
     static excluir = (req, res) => {
         const id = req.params.id
 
-        motoristas.findByIdAndDelete(id)
+        motoristas.deleteOne(id)
             .then(resposta => {
                 res.status(200).send({message: `Excluído com sucesso.`})
             }).catch(err => {
